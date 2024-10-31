@@ -1,0 +1,23 @@
+﻿<Page x:Class="PartnerApp.Pages.PartnerStory"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PartnerApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PartnerStory">
+
+    <Grid>
+        <DataGrid>
+            <DataGrid.Columns>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Style="{StaticResource interactiveButtonPack}">
+            <Button Style="{StaticResource interactiveButtonStyle}" Content="Добавить"/>
+            <Button Style="{StaticResource interactiveButtonStyle}" Content="Редактировать"/>
+            <Button Style="{StaticResource interactiveButtonStyle}" Content="Назад"/>
+        </StackPanel>
+    </Grid>
+</Page>
