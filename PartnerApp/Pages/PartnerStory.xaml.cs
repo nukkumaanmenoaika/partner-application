@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PartnerApp.TimeStorage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,13 @@ namespace PartnerApp.Pages
         public PartnerStory()
         {
             InitializeComponent();
+            MainGrid.ItemsSource = PartnerDBEntities.GetContext().Sales.ToList();
+
+        }
+
+        private void Button_Click_Back(object sender, RoutedEventArgs e)
+        {
+            manager.Frame.Navigate(new MainPage()); 
         }
     }
 }

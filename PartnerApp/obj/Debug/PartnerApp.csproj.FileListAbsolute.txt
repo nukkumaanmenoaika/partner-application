@@ -11,9 +11,6 @@ C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\EntityFramework.dll
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\MahApps.Metro.dll
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\Microsoft.Xaml.Behaviors.dll
-C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\System.Data.SQLite.dll
-C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\ControlzEx.pdb
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\ControlzEx.xml
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\EntityFramework.xml
@@ -22,7 +19,6 @@ C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\MahApps.Metro.pdb
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\MahApps.Metro.xml
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\Microsoft.Xaml.Behaviors.pdb
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\Microsoft.Xaml.Behaviors.xml
-C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\bin\Debug\System.Data.SQLite.xml
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\MainWindow.baml
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp.g.resources
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp.Properties.Resources.resources
@@ -31,8 +27,17 @@ C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp.csproj.CoreCo
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp.csproj.CopyComplete
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp.exe
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp.pdb
-C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\Partners.g.cs
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\PartnerStory.g.cs
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\App.baml
-C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\Partners.baml
 C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\PartnerStory.baml
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\PartnerApp_Content.g.cs
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\PartnersList.g.cs
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\PartnersList.baml
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\EditWindows\EditingPartner.g.cs
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\EditWindows\EditingPartner.baml
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\MainPage.g.cs
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\MainPage.baml
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\EditWindows\AddPartner.g.cs
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\EditWindows\AddPartner.baml
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\Discounts.g.cs
+C:\Users\Ametsa\Desktop\PartnerApp\PartnerApp\obj\Debug\Pages\Discounts.baml

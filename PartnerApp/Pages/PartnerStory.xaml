@@ -9,15 +9,34 @@
       Title="PartnerStory">
 
     <Grid>
-        <DataGrid>
+        <DataGrid Name = "MainGrid" AutoGenerateColumns="False" IsReadOnly="True">
             <DataGrid.Columns>
+                <DataGridTemplateColumn Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Width="AUTO">
+                                <StackPanel Orientation="Vertical" Width="300" Margin="30 10 0 0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding PartnerName}"/>
+                                    </StackPanel>
+                                    <TextBlock Text="{Binding ProductName}"/>
+                                    <TextBlock Text="{Binding ProductQuantity}"/>
+                                    
+                                </StackPanel>
+                                <TextBlock Text="{Binding SaleDate}"  Margin="270 0 0 0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
 
             </DataGrid.Columns>
+
+
         </DataGrid>
         <StackPanel Style="{StaticResource interactiveButtonPack}">
-            <Button Style="{StaticResource interactiveButtonStyle}" Content="Добавить"/>
-            <Button Style="{StaticResource interactiveButtonStyle}" Content="Редактировать"/>
-            <Button Style="{StaticResource interactiveButtonStyle}" Content="Назад"/>
+            <StackPanel Style="{StaticResource interactiveButtonBlock}">
+                <Button Style="{StaticResource interactiveButtonStyle}" Content="Назад" Click="Button_Click_Back"/>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </Page>

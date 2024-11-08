@@ -5,13 +5,35 @@
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <Style TargetType="Button" x:Key="interactiveButtonStyle">
-            <Setter Property="Width" Value="120" />
+            <Setter Property="Width" Value="125" />
             <Setter Property="Height" Value="50" />
-            <Setter Property="Margin" Value="0 15 0 0"/>
+            <Setter Property="Margin" Value="0 0 0 0"/>
+            <Setter Property="Background" Value="#67BA80"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Style.Resources>
+            <Style TargetType="Border">
+                <Setter Property="CornerRadius" Value="20 20 20 20"/>
+            </Style>
+            </Style.Resources>
         </Style>
         <Style TargetType="StackPanel" x:Key="interactiveButtonPack">
+            <Setter Property="Background" Value="#F4E8D3"/>
             <Setter Property="VerticalAlignment" Value="Bottom" />
-            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="HorizontalAlignment" Value="Stretch" />
+            <Setter Property="Width" Value="auto"/>
+        </Style>
+        <Style TargetType="StackPanel" x:Key="interactiveButtonBlock">
+            <Setter Property="Orientation" Value="Horizontal"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+
+
+
+
+        <Style TargetType="StackPanel" x:Key="EditPanelBlock">
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="Margin" Value="0 0 15 0"/>
         </Style>
     </Application.Resources>
 </Application>

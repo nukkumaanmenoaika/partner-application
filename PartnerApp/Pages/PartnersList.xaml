@@ -1,0 +1,48 @@
+﻿<Page x:Class="PartnerApp.Pages.PartnersList"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PartnerApp.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000" 
+      Title="PartnersList">
+
+    <Grid>
+        <DataGrid Name = "MainGrid" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTemplateColumn Width="Auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal" Width="AUTO">
+                                <StackPanel Orientation="Vertical" Width="300" Margin="30 10 0 0">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding PartnerType}"/>
+                                        <TextBlock Text=" | "/>
+                                        <TextBlock Text="{Binding PartnerName}"/>
+                                    </StackPanel>
+                                    <TextBlock Text="{Binding Director}"/>
+                                    <TextBlock Text="{Binding Phone}"/>
+                                    <TextBlock Text="{Binding Rating}"/>
+                                    <TextBlock Text="{Binding INN}"/>
+                                    <TextBlock Text="{Binding LegalAddress}"/>
+                                    <TextBlock/>
+                                </StackPanel>
+                                <Button Content="Редактировать" Style="{StaticResource interactiveButtonStyle}" Click="Button_Edit_Click" Margin="300 0 0 0"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+            </DataGrid.Columns>
+               
+           
+        </DataGrid>
+        <StackPanel Style="{StaticResource interactiveButtonPack}">
+            <StackPanel Style="{StaticResource interactiveButtonBlock}">
+                <Button Style="{StaticResource interactiveButtonStyle}" Content="Добавить" Margin="0 0 15 0" Click="Button_Click_Add"/>
+                <Button Style="{StaticResource interactiveButtonStyle}" Content="Назад" Click="Button_Click_Back"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

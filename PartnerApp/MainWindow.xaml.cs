@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PartnerApp.Pages;
+using PartnerApp.TimeStorage;
 
 namespace PartnerApp
 {
@@ -24,25 +25,13 @@ namespace PartnerApp
         public MainWindow()
         {
             InitializeComponent();
+            pageFrame.Navigate(new MainPage());
+            manager.Frame = pageFrame;  
         }
 
 
-        private void changeMainObject()
-        {
-            Menu.Visibility = Visibility.Hidden;
-            pageFrame.Visibility = Visibility.Visible;
-        }
+        
 
-        private void buttonPartnerClick(object sender, RoutedEventArgs e)
-        {
-            pageFrame.Navigate(new Partners());
-            changeMainObject();
-        }
-
-        private void buttonPartnerStoryClick(object sender, RoutedEventArgs e)
-        {
-            pageFrame.Navigate(new PartnerStory());
-            changeMainObject();
-        }
+        
     }
 }

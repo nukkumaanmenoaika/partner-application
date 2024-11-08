@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PartnerDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="MaterialDefects">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MaterialType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DefectPercentage" Type="Decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="Partners">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="PartnerType" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="PartnerName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Director" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LegalAddress" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="INN" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Rating" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="Article" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MinPartnerPrice" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="ProductType">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductTypeName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProductTypeCoefficient" Type="Decimal" Precision="5" Scale="2" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="ProductName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="PartnerName" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="ProductQuantity" Type="Int32" />
+    <Property Name="SaleDate" Type="DateTime" Precision="0" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="PartnerDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="MaterialDefects" EntityType="Self.MaterialDefects" />
+    <EntitySet Name="Partners" EntityType="Self.Partners" />
+    <EntitySet Name="Product" EntityType="Self.Product" />
+    <EntitySet Name="ProductType" EntityType="Self.ProductType" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+  </EntityContainer>
+</Schema>
