@@ -24,6 +24,7 @@ namespace PartnerApp.EditWindows
         {
             InitializeComponent();
             TypePartner.ItemsSource = typesPartner;
+            TypePartner.SelectedIndex = 1;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,19 +32,29 @@ namespace PartnerApp.EditWindows
             var context = PartnerDBEntities.GetContext();
             Partners par = new Partners();
             
-            par.PartnerType = TypePartner.SelectedItem.ToString();
-            par.PartnerName = NamePartner.Text;
-            par.Email = Email.Text;
-            par.INN = INN.Text;
-            par.Director = Director.Text;
-            par.Phone = Phone.Text;
-            par.Email = Email.Text;
-            par.Rating = Convert.ToInt32(Rating.Text);
-            par.LegalAddress = Address.Text;
-            context.Partners.Append(par);
-            context.SaveChanges();
+            if(TypePartner.SelectedItem == null || NamePartner.Text == "" || Email.Text == "" || INN.Text == "" || Director.Text == "" || Phone.Text == "" || Email.Text == ""
+                || Rating.Text == "" || Address.Text == "")
+            {
+                MessageBox.Show("Ошибка ввода данных!", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
 
-            Close();
+            }
+            else { 
+            }
+                par.PartnerType = TypePartner.SelectedItem.ToString();
+                par.PartnerName = NamePartner.Text;
+                par.Email = Email.Text;
+                par.INN = INN.Text;
+                par.Director = Director.Text;
+                par.Phone = Phone.Text;
+                par.Email = Email.Text;
+                par.Rating = Convert.ToInt32(Rating.Text);
+                par.LegalAddress = Address.Text;
+                context.Partners.Append(par);
+                context.SaveChanges();
+                Close();
         }
+
+
+    }
     }
 }

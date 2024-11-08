@@ -18,7 +18,7 @@
             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                 <StackPanel Style="{StaticResource EditPanelBlock}">
                     <TextBlock Text="Тип"/>
-                    <ComboBox Name="TypePartner"/>
+                    <ComboBox Name="TypePartner" SelectedIndex="1"/>
                 </StackPanel>
                 <StackPanel Style="{StaticResource EditPanelBlock}">
                     <TextBlock Text="Наименование"/>
